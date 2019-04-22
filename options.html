@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Voitto FastLearn</title>
+		<link rel="stylesheet" href="options.css" />
+        <script src="options.js"></script>
+        <meta charset="UTF-8">
+	</head>
+	<body>
+        
+		<header>
+			<h1>Configurações Voitto FastLearn</h1>
+		</header>
+
+    <section id="customs">
+      <h3>Atalhos</h3>
+      <div class="row">
+        <label for="displayKeyInput">Exibir/Ocultar:</label>
+        <input id="displayKeyInput" placeholder="press a key" type="text" value=""/>
+      </div>
+        <div class="row customs" id="slower">
+            <select class="customDo">
+                <option value="slower">Diminuir velocidade</option>
+            </select>
+            <input class="customKey" type="text" value="" placeholder="press a key">
+            <input class="customValue" type="text" placeholder="value (0.10)">
+            <select class="customForce">
+                <option value="false">Não desative as associações de teclas do site</option>
+                <option value="true">Desativar associações de teclas de sites</option>
+            </select></div>
+        <div class="row customs" id="faster">
+            <select class="customDo">
+                <option value="faster">Aumente a velocidade</option>
+            </select>
+            <input class="customKey" type="text" value="" placeholder="press a key">
+                <input class="customValue" type="text" placeholder="value (0.10)">
+            <select class="customForce">
+                <option value="false">Não desative as associações de teclas do site</option>
+                <option value="true">Desativar associações de teclas de sites</option>
+            </select></div>
+        <div class="row customs" id="rewind">
+            <select class="customDo">
+                <option value="rewind">Rebobinar</option>
+            </select>
+            <input class="customKey" type="text" value="" placeholder="press a key">
+            <input class="customValue" type="text" placeholder="value (10)">
+            <select class="customForce">
+                <option value="false">Não desative as associações de teclas do site</option>
+                <option value="true">Desativar associações de teclas de sites</option>
+            </select></div>
+        <div class="row customs" id="advance">
+            <select class="customDo">
+                <option value="advance">Avançar</option>
+            </select>
+            <input class="customKey" type="text" value="" placeholder="press a key">
+            <input class="customValue" type="text" placeholder="value (10)">
+            <select class="customForce">
+                <option value="false">Não desative as associações de teclas do site</option>
+                <option value="true">Desativar associações de teclas de sites</option>
+            </select></div>
+        <div class="row customs" id="reset">
+            <select class="customDo">
+                <option value="reset">Redefinir velocidade</option>
+            </select>
+            <input class="customKey" type="text" value="" placeholder="press a key">
+            <input class="customValue" type="text" placeholder="value (1.00)" disabled>
+            <select class="customForce">
+                <option value="false">Não desative as associações de teclas do site</option>
+                <option value="true">Desativar associações de teclas de sites</option>
+            </select></div>
+        <div class="row customs" id="fast">
+            <select class="customDo">
+                <option value="fast">Velocidade preferida</option>
+            </select>
+            <input class="customKey" type="text" value="" placeholder="press a key">
+            <input class="customValue" type="text" placeholder="value (1.80)">
+            <select class="customForce">
+                <option value="false">Não desative as associações de teclas do site</option>
+                <option value="true">Desativar associações de teclas de sites</option>
+            </select></div>
+
+        <button id="add">Adicionar novo</button>
+    </section>
+
+    <section>
+			<h3>Outros</h3>
+		<div class="row" style="display:none">
+        <label for="startHidden" >Ocultar o controlador por padrão</label>
+        <input id="startHidden" type="checkbox"/>
+      </div>
+      <div class="row">
+          <label for="rememberSpeed">Lembre-se da velocidade de reprodução</label>
+          <input id="rememberSpeed" type="checkbox"/>
+      </div>
+      <div class="row" style="display:none">
+          <label for="blacklist">Sites na lista negra nos quais a extensão está desativada <br/> (um por linha)</label>
+          <textarea id="blacklist" rows="10" cols="50"></textarea>
+      </div>
+    </section>
+
+    <button id="save">Salvar</button>
+    <button id="restore">Restaurar Confirgurações</button>
+    <button id="experimental">Mostrar recursos experimentais    </button>
+
+    <div id="status"></div>
+
+  </body>
+</html>
